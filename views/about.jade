@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  h2 #{title}
+  h3 #{message}
+  .container
+    .row
+        .col-md-12
+          .well.well-sm
+            form.form-horizontal(method='post')
+              fieldset
+                legend.text-center.header Contacta con nosotros
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-user.bigicon
+                  |                             
+                  .col-md-8
+                    input#fname.form-control(name='name', type='text', placeholder='Nombre')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-user.bigicon
+                  |                             
+                  .col-md-8
+                    input#lname.form-control(name='name', type='text', placeholder='Apellido')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-envelope-o.bigicon
+                  |                             
+                  .col-md-8
+                    input#email.form-control(name='email', type='text', placeholder='Email')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-phone-square.bigicon
+                  |                             
+                  .col-md-8
+                    input#phone.form-control(name='phone', type='text', placeholder='Teléfono')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-pencil-square-o.bigicon
+                  |                             
+                  .col-md-8
+                    textarea#message.form-control(name='message', placeholder='Mensaje.', rows='7')
+                |                         
+                .form-group
+                  .col-md-12.text-center
+                    button.btn.btn-primary.btn-lg(type='submit') Enviar
+

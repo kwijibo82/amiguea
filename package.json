@@ -1,14 +1,14 @@
 {
-  "name": "ExpressApp3",
-  "version": "0.0.0",
-  "description": "ExpressApp3",
+  "name": "amiguea",
+  "version": "*",
+  "description": "amiguea",
   "scripts": {
     "start": "node server.js"
   },
   "main": "server.js",
   "author": {
-    "name": "Maro",
-    "email": ""
+    "name": "devTeam",
+    "email": "xamorach@gmail.com"
   },
   "dependencies": {
     "express": "3.4.4",

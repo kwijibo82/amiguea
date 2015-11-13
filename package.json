@@ -1,6 +1,6 @@
 {
   "name": "amiguea",
-  "version": "*",
+  "version": "0.0.0",
   "description": "amiguea",
   "scripts": {
     "start": "node server.js"

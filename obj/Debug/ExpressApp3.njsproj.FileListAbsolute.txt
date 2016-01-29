@@ -1,1 +1,3 @@
 C:\Users\Maro\Documents\Visual Studio 2013\WebSites\ExpressApp3\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\maroj\OneDrive\Documentos\Visual Studio 2013\Projects\amiguea\obj\Debug\ExpressApp3.njsprojResolveAssemblyReference.cache
+C:\Users\maroj\OneDrive\Documentos\Visual Studio 2013\Projects\amiguea\bin\Microsoft.NodejsTools.WebRole.dll

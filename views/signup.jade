@@ -1,0 +1,36 @@
+﻿extends layout
+
+block content
+  h2 #{title}
+
+    .login.well
+      h1  Welcome aboard!
+      hr
+      form(id='register-form', method='POST', action='/register' novalidate)
+        .form-group
+          label(for='name') Nombre
+          input(type='text', name='name', class='form-control', 
+            id='name', placeholder='Introduce tu nombre')
+        .form-group
+          label(for='lastname') Apellidos
+          input(type='text', name='lastname', class='form-control', 
+            id='lastname', placeholder='Introduce tus apellidos')
+        .form-group
+          label(for='password') Contraseña
+          input(type='password', name='password', class='form-control', 
+            id='password', placeholder='Introduce la contraseña')
+        .form-group
+          label(for='confirm-password') Confirma la contraseña
+          input(type='password', name='confirm-password', class='form-control', 
+            id='confirm-password', placeholder='Confirma la contraseña')
+        .form-group
+          label(for='email') Email
+          input(type='email', name='email', class='form-control', 
+            id='email', placeholder='Introduce email')    
+        .form-group
+          label(for='confirm-email') Confirma Email
+          input(type='email', name='confirm-email', class='form-control', 
+            id='confirm-email', placeholder='Confirma email')
+        .form-group
+          button.btn.btn-default(type='submit') Regístrate
+          a(href="login") O inicia sesión

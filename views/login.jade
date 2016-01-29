@@ -1,0 +1,23 @@
+﻿extends layout
+
+block content
+  h2 #{title}
+
+  .col-md-5
+        form.form-signin(role='form')
+            h2.form-signin-heading Por favor, inicia sesión
+            input.form-control(type='email', placeholder='Dirección e-mail', required='', autofocus='')
+            input.form-control(type='password', placeholder='Password', required='')
+            label.checkbox
+                  input(type='checkbox', value='remember-me')
+                  |  Recuérdame
+                button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+  .col-md-7
+          h2.featurette-heading
+            | O inicia sesión con Google | Facebook 
+            span.text-muted See for yourself.
+          p.lead
+            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod se
+
+
+  

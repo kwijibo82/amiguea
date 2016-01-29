@@ -22,6 +22,8 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -29,8 +31,12 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/about', routes.about);
+app.get('/home', routes.home);
 app.get('/contact', routes.contact);
+app.get('/login', routes.login);
+app.get('/signup', routes.signup);
+app.get('/actividad', routes.actividad);
+
 
 
 

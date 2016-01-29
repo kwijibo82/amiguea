@@ -2,22 +2,45 @@ extends layout
 
 block content
   h2 #{title}
-  h3 #{message}
-  .col-md-5
-        form.form-signin(role='form')
-            h2.form-signin-heading Por favor, inicia sesión
-            input.form-control(type='email', placeholder='Dirección e-mail', required='', autofocus='')
-            input.form-control(type='password', placeholder='Password', required='')
-            label.checkbox
-                  input(type='checkbox', value='remember-me')
-                  |  Recuérdame
-                button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
-  .col-md-7
-          h2.featurette-heading
-            | O inicia sesión con Google | Facebook 
-            span.text-muted See for yourself.
-          p.lead
-            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod se
-
-
   
+  .container
+    .row
+        .col-md-12
+          .well.well-sm
+            form.form-horizontal(method='post')
+              fieldset
+                legend.text-center.header #{message}
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-user.bigicon
+                  |                             
+                  .col-md-8
+                    input#fname.form-control(name='name', type='text', placeholder='Nombre')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-user.bigicon
+                  |                             
+                  .col-md-8
+                    input#lname.form-control(name='name', type='text', placeholder='Apellido')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-envelope-o.bigicon
+                  |                             
+                  .col-md-8
+                    input#email.form-control(name='email', type='text', placeholder='Email')
+                |                         
+                .form-group
+                  span.col-md-1.col-md-offset-2.text-center
+                    i.fa.fa-phone-square.bigicon
+                  |                             
+                                          
+                  .col-md-8
+                    textarea#message.form-control(name='message', placeholder='Mensaje.', rows='7')
+                |                         
+                .form-group
+                  .col-md-12.text-center
+                    button.btn.btn-primary.btn-lg(type='submit') Enviar
+

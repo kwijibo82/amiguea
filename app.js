@@ -36,8 +36,11 @@ app.get('/contact', routes.contact);
 app.get('/login', routes.login);
 app.get('/signup', routes.signup);
 app.get('/actividad', routes.actividad);
-
-
+app.get('/perfil', routes.perfil);
+app.get('/about', routes.about);
+app.get('/faq', routes.faq);
+app.get('/crearactividad', routes.crearactividad);
+app.get('/actividades', routes.actividades);
 
 
 http.createServer(app).listen(app.get('port'), function () {

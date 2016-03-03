@@ -22,5 +22,21 @@ exports.login = function (req, res) {
 exports.actividad = function (req, res) {
     res.render('actividad', { title: 'Actividad', year: new Date().getFullYear(), message: 'Actividad:' });
 };
+exports.perfil = function (req, res) {
+    res.render('perfil', { title: 'Mi perfil', year: new Date().getFullYear(), message: 'Mi perfil:' });
+};
+exports.about = function (req, res) {
+    res.render('about', { title: 'Sobre nosotros', year: new Date().getFullYear(), message: 'About us:' });
+};
+exports.faq = function (req, res) {
+    res.render('faq', { title: 'FAQ', year: new Date().getFullYear(), message: 'FAQ:' });
+};
+exports.crearactividad = function (req, res) {
+    res.render('crearactividad', { title: 'Crear actividad', year: new Date().getFullYear(), message: 'Crear actividad:' });
+};
+exports.actividades = function (req, res) {
+    res.render('actividades', { title: 'Actividades', year: new Date().getFullYear(), message: 'Actividades:' });
+};
+
 
 

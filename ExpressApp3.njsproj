@@ -646,6 +646,8 @@
     <Content Include="node_modules\stylus\Readme.md" />
     <Content Include="obj\Debug\ExpressApp3.njsproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ExpressApp3.njsprojResolveAssemblyReference.cache" />
+    <Content Include="public\images\actividad.jpg" />
+    <Content Include="public\images\border.PNG" />
     <Content Include="public\javascripts\parallax.js" />
     <Content Include="public\javascripts\hamburgler.js" />
     <Compile Include="node_modules\express\index.js" />
@@ -1415,10 +1417,10 @@
     <Compile Include="node_modules\stylus\node_modules\source-map\test\source-map\test-source-node.js" />
     <Compile Include="node_modules\stylus\node_modules\source-map\test\source-map\test-util.js" />
     <Compile Include="node_modules\stylus\node_modules\source-map\test\source-map\util.js" />
+    <Content Include="public\javascripts\actividades.js" />
     <Compile Include="routes\index.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="public\images\fingers.jpg" />
     <Content Include="public\javascripts\bootstrap.js" />
     <Content Include="public\javascripts\bootstrap.min.js" />
     <Content Include="public\javascripts\jquery-1.10.2.intellisense.js" />
@@ -1443,15 +1445,21 @@
     <Content Include="public\stylesheets\bootstrap.min.css" />
     <Content Include="public\stylesheets\hamburgler.css" />
     <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\notificaciones.css" />
     <Content Include="public\stylesheets\style.css">
       <Publish>False</Publish>
     </Content>
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\about.jade" />
     <Content Include="views\actividad.jade" />
+    <Content Include="views\actividades.jade" />
     <Content Include="views\contact.jade" />
+    <Content Include="views\crearactividad.jade" />
+    <Content Include="views\faq.jade" />
     <Content Include="views\index.jade" />
     <Content Include="views\home.jade" />
+    <Content Include="views\perfil.jade" />
     <Content Include="views\pruebasC.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\login.jade" />

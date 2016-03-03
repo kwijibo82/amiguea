@@ -1,0 +1,58 @@
+﻿extends layout
+
+block content
+  h1.seccion #{title}
+ 
+  .container
+    .row
+        .col-md-12
+          .col-md-8
+            |      
+            hr.colorgraph
+            h2.seccion últimas actividades
+            p
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem ut quam bibendum pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget tellus eu felis sollicitudin semper vel efficitur risus. Maecenas tincidunt et odio vitae varius. Aliquam ut tortor nisi. Nulla sit amet nisl orci. Maecenas efficitur odio velit, ac rutrum nulla fermentum vel. Nullam et neque nec urna auctor maximus.
+
+                Sed ut orci a diam mattis condimentum sollicitudin at ante. Vestibulum non dolor accumsan, condimentum dui non, feugiat arcu. Vestibulum at ipsum nisi. Praesent orci ligula, viverra vel dui quis, rhoncus efficitur est. Nulla facilisi. Proin sollicitudin, sem ullamcorper rutrum sodales, tellus velit pharetra dui, at placerat tortor est sed urna. Ut sed nisl nec orci porttitor feugiat vitae eu tellus. In faucibus, lectus et dictum maximus, ante est euismod mauris, nec elementum metus justo ac metus. Fusce neque risus, placerat ac bibendum sed, egestas vitae arcu. Aenean non rhoncus quam. Maecenas mattis mi non neque fermentum, lobortis gravida justo tincidunt. Etiam pharetra varius est, ac eleifend massa posuere eu. Vivamus non nulla venenatis, cursus nulla nec, rutrum purus. Nunc augue nulla, lobortis ut malesuada vitae, porttitor ac arcu. Sed ornare nisi non ligula molestie bibendum.
+
+                Mauris ultricies at lectus non sodales. Ut bibendum orci quis lobortis accumsan. Suspendisse non eros purus. Donec vel elementum ante. Nullam blandit blandit ex, quis porta libero aliquam id. Cras elementum, justo eu ullamcorper bibendum, mauris libero rutrum lacus, rutrum bibendum nisi metus eget eros. Phasellus id mauris finibus, laoreet erat sed, tristique elit. Nam nec tortor sit amet arcu porta mattis. Vestibulum ullamcorper porttitor augue nec porta. Sed ante mauris, tristique a neque in, hendrerit commodo odio.
+            
+          .col-md-4
+             h2.seccion Buscador actividades
+             img(src="https://maps.googleapis.com/maps/api/staticmap?center=Opera+House,Sydney+Australia&zoom=13&size=400x300&markers=-33.8565,151.2151&sensor=false")
+             form.form-horizontal(role='form')
+                .form-group
+                     label(for='contain') Localidad                                   
+                     input.form-control(type='text')
+                |    
+                .form-group
+                    
+                    label(for='filter') Filtrar por
+                    |                                     
+                    select.form-control
+                      option(value='0', selected='') Todo
+                      |                                         
+                      option(value='1') Featured
+                      |                                         
+                      option(value='2') Most popular
+                      |                                         
+                      option(value='3') Top rated
+                      |                                         
+                      option(value='4') Most commented
+                |                                   
+                               
+                .form-group
+                    label(for='search') Buscador       
+                    input#search.form-control(type='text', name='search', placeholder='search')
+                    a.btn.btn-default(href='#')
+                        span.glyphicon.glyphicon-search
+                        |  Buscar
+
+
+                .form-group
+                    label(for='contain') Fecha                                 
+                    input.form-control(type='text')
+                    a.btn.btn-default(href='#')
+                        span.glyphicon.glyphicon-search
+                        |  Buscar
+                          

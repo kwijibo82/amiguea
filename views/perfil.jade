@@ -1,0 +1,81 @@
+﻿extends layout
+
+block content
+  h2.perfil.seccion Mi perfil: 
+  
+  .container-full
+    .row
+        .col-md-12
+            .col-md-6.perfil
+                p
+                
+                  img.avatar.img-circle.img-thumbnail.center-block(src='http://lorempixel.com/200/200/people/9/', alt='avatar')
+                
+                a.edi(href='/') Editar
+                p 
+                  | Nombre de usuario
+                | 
+
+                a.edi(href='/') Editar
+              
+                p
+                  | Edad
+                |  
+                                   
+                p
+                  | Sexo
+                | 
+                                    
+                p
+                  | Preferencias
+                |     
+                                
+                a.edi(href='#') Editar
+                
+                p
+                  | Localidad
+                | 
+
+                a.edi(href='#') Editar
+
+           
+                .social-login-buttons.lista
+                    a.btn.btn-link-2(href='#')
+                      i.fa.fa-facebook
+                      |  Facebook
+                    | 
+                    a.btn.btn-link-2(href='#')
+                      i.fa.fa-twitter
+                      |  Twitter
+                    | 
+                    a.btn.btn-link-2(href='#')
+                      i.fa.fa-google-plus
+                      |  Google Plus
+
+                p            
+                  a.edi(href='#') Editar
+
+            .col-md-6
+              .panel.panel-default
+                .panel-heading
+                  h3.panel-title
+                    | Actividades Pendientes
+                | 
+                .panel-body
+                  | Panel content
+                
+                .panel-footer
+                  | Panel footer
+              
+              hr.colorgraph
+              
+              .panel.panel-default
+                .panel-heading
+                  h3.panel-title
+                    | Actividades realizadas
+                | 
+                .panel-body
+                  | Panel content
+                
+                .panel-footer
+                  | Panel footer

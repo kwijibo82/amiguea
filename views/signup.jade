@@ -1,36 +1,99 @@
 ﻿extends layout
 
 block content
-  h2 #{title}
-
-    .login.well
-      h1  Welcome aboard!
-      hr
-      form(id='register-form', method='POST', action='/register' novalidate)
-        .form-group
-          label(for='name') Nombre
-          input(type='text', name='name', class='form-control', 
-            id='name', placeholder='Introduce tu nombre')
-        .form-group
-          label(for='lastname') Apellidos
-          input(type='text', name='lastname', class='form-control', 
-            id='lastname', placeholder='Introduce tus apellidos')
-        .form-group
-          label(for='password') Contraseña
-          input(type='password', name='password', class='form-control', 
-            id='password', placeholder='Introduce la contraseña')
-        .form-group
-          label(for='confirm-password') Confirma la contraseña
-          input(type='password', name='confirm-password', class='form-control', 
-            id='confirm-password', placeholder='Confirma la contraseña')
-        .form-group
-          label(for='email') Email
-          input(type='email', name='email', class='form-control', 
-            id='email', placeholder='Introduce email')    
-        .form-group
-          label(for='confirm-email') Confirma Email
-          input(type='email', name='confirm-email', class='form-control', 
-            id='confirm-email', placeholder='Confirma email')
-        .form-group
-          button.btn.btn-default(type='submit') Regístrate
-          a(href="login") O inicia sesión
+    .container
+        .col-md-8.col-sm-6.col-xs-12.personal-info   
+          form.form-horizontal(id='register-form', method='POST', action='/register' novalidate)  
+           fieldset 
+            h2.seccion
+            | Por favor, registrate 
+            small  ¡Es gratis!
+            |         
+            hr.colorgraph
+            |    
+            .col-xs-6.col-sm-6.col-md-6   
+                .form-group
+                  label(for='name') Nombre
+                  input(type='text', name='name', class='form-control', 
+                    id='name', placeholder='Introduce tu nombre')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='lastname') Apellidos
+                  input(type='text', name='lastname', class='form-control', 
+                    id='lastname', placeholder='Introduce tus apellidos')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='fecha') Fecha nacimiento
+                  input(type='text', name='fecha', class='form-control', 
+                    id='datepicker', placeholder='Introduce tus fecha de nacimiento')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='nombreUsu') Nombre usuario
+                  input(type='text', name='nombreUsu', class='form-control', 
+                    id='nombreUsu', placeholder='Escoge un nombre de usuario')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='password') Contraseña
+                  input(type='password', name='password', class='form-control', 
+                    id='password', placeholder='Introduce la contraseña')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='confirm-password') Confirma la contraseña
+                  input(type='password', name='confirm-password', class='form-control', 
+                    id='confirm-password', placeholder='Confirma la contraseña')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='poblacion') Población
+                  input(type='text', name='poblacion', class='form-control', 
+                    id='poblacion', placeholder='Selecciona tu población')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='email') Email
+                  input(type='email', name='email', class='form-control', 
+                    id='email', placeholder='Introduce email')    
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label(for='preferencias') Preferencias
+                  input(type='text', name='preferencias', class='form-control', 
+                    id='preferencias', placeholder='Escoge tus preferencias')
+            .col-xs-6.col-sm-6.col-md-6
+                .form-group
+                  label Sexo
+                    .radio
+                      label
+                        input#optionsRadios1(type="radio", name="optionsRadios", value="Hombre", checked="")
+                        | Hombre
+                    .radio
+                      label
+                        input#optionsRadios2(type="radio", name="optionsRadios", value="Mujer")
+                        | Mujer
+            .row
+                .col-xs-3.col-sm-3.col-md-3
+                    span.button-checkbox
+                      button.btn(type='submit', data-color='info', tabindex='7') Acepto
+                      |             
+                      input#terminos.hidden(type='checkbox', name='terminos', value='1')
+                  |           
+                .col-xs-9.col-sm-9.col-md-9
+                      | Clickando en  
+                      strong.label.label-primary Acepto
+                      | , estás de acuerdo con los 
+                      a(href='#', data-toggle='modal', data-target='#terminos') términos y condiciones
+                      |  de este sitio, incluyendo el uso de cookies.
+            hr.colorgraph
+            |         
+            .row
+              .col-xs-6.col-md-6
+                input.btn.btn-primary.btn-block.btn-lg(type='submit', value='Registrarse', tabindex='7')
+              |           
+              .col-xs-6.col-md-6
+                a.btn.btn-success.btn-block.btn-lg(href='#login') Login
+   
+                |     
+        .col-md-4.col-sm-6.col-xs-12
+          .text-center
+            img.avatar.img-circle.img-thumbnail(src='http://lorempixel.com/200/200/people/9/', alt='avatar')
+            |         
+            h6 Sube tu imagen...
+            |         
+            input.text-center.center-block.well.well-sm(type='file')

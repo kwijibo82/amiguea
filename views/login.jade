@@ -1,23 +1,63 @@
 ﻿extends layout
 
 block content
-  h2 #{title}
-
-  .col-md-5
-        form.form-signin(role='form')
-            h2.form-signin-heading Por favor, inicia sesión
-            input.form-control(type='email', placeholder='Dirección e-mail', required='', autofocus='')
-            input.form-control(type='password', placeholder='Password', required='')
-            label.checkbox
-                  input(type='checkbox', value='remember-me')
-                  |  Recuérdame
-                button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
-  .col-md-7
-          h2.featurette-heading
-            | O inicia sesión con Google | Facebook 
-            span.text-muted See for yourself.
-          p.lead
-            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod se
-
-
-  
+  .top-content
+      .inner-bg
+        .container
+          .row
+            .col-sm-8.col-sm-offset-2.text
+              h1.seccion
+                strong AMIGUEA:
+                
+              |                             
+              .description
+                p
+                  | Inicia sesión en AMIGUEA:  
+          hr.colorgraph
+          |                      
+          .row
+            .col-sm-6.col-sm-offset-3.form-box.form-login
+              .form-top
+                .form-top-left
+                  h3 Inicia sesión
+                  |                            
+                  p Introduce nombre de usuario y contraseña 
+                |                       
+                .form-top-right
+                  i.fa.fa-lock
+              |                             
+              .form-bottom
+                form.login-form(role='form', action='', method='post')
+                .col-xs-6.col-sm-6.col-md-6
+                  .form-group
+                    label.sr-only(for='form-username') Nombre de usuario
+                    | 
+                    input#form-username.form-username.form-control(type='text', name='form-username', placeholder='Nombre de usuario...')
+                  | 
+                .col-xs-6.col-sm-6.col-md-6                        
+                  .form-group
+                    label.sr-only(for='form-password') Contraseña
+                    | 
+                    input#form-password.form-password.form-control(type='password', name='form-password', placeholder='Password...')
+                .col-xs-6.col-sm-6.col-md-6                       
+                  button.repeating-linear(type='submit') Sign in! 
+                .col-xs-6.col-sm-6.col-md-6
+                  p.olvidar Si has olvidado tu contraseña
+                  a(href='#', data-toggle='modal', data-target='#recuperar') recuperar contraseña
+          |                     
+          .row
+            .col-sm-6.col-sm-offset-3.social-login
+              h3 ...o inicia sesión con :
+              |                         
+              .social-login-buttons
+                a.btn.btn-link-2(href='#')
+                  i.fa.fa-facebook
+                  |  Facebook
+                | 
+                a.btn.btn-link-2(href='#')
+                  i.fa.fa-twitter
+                  |  Twitter
+                | 
+                a.btn.btn-link-2(href='#')
+                  i.fa.fa-google-plus
+                  |  Google Plus

@@ -1,52 +1,20 @@
 extends layout
 
 block content
-  h2 #{title}
-  h3 #{message}
+  h2.seccion #{title}
+ 
   .container
     .row
         .col-md-12
-          .well.well-sm
-            form.form-horizontal(method='post')
-              fieldset
-                legend.text-center.header Contacta con nosotros
-                |                         
-                .form-group
-                  span.col-md-1.col-md-offset-2.text-center
-                    i.fa.fa-user.bigicon
-                  |                             
-                  .col-md-8
-                    input#fname.form-control(name='name', type='text', placeholder='Nombre')
-                |                         
-                .form-group
-                  span.col-md-1.col-md-offset-2.text-center
-                    i.fa.fa-user.bigicon
-                  |                             
-                  .col-md-8
-                    input#lname.form-control(name='name', type='text', placeholder='Apellido')
-                |                         
-                .form-group
-                  span.col-md-1.col-md-offset-2.text-center
-                    i.fa.fa-envelope-o.bigicon
-                  |                             
-                  .col-md-8
-                    input#email.form-control(name='email', type='text', placeholder='Email')
-                |                         
-                .form-group
-                  span.col-md-1.col-md-offset-2.text-center
-                    i.fa.fa-phone-square.bigicon
-                  |                             
-                  .col-md-8
-                    input#phone.form-control(name='phone', type='text', placeholder='Teléfono')
-                |                         
-                .form-group
-                  span.col-md-1.col-md-offset-2.text-center
-                    i.fa.fa-pencil-square-o.bigicon
-                  |                             
-                  .col-md-8
-                    textarea#message.form-control(name='message', placeholder='Mensaje.', rows='7')
-                |                         
-                .form-group
-                  .col-md-12.text-center
-                    button.btn.btn-primary.btn-lg(type='submit') Enviar
+          .col-md-8
+            |      
+            hr.colorgraph
+            p
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae lorem ut quam bibendum pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget tellus eu felis sollicitudin semper vel efficitur risus. Maecenas tincidunt et odio vitae varius. Aliquam ut tortor nisi. Nulla sit amet nisl orci. Maecenas efficitur odio velit, ac rutrum nulla fermentum vel. Nullam et neque nec urna auctor maximus.
 
+                Sed ut orci a diam mattis condimentum sollicitudin at ante. Vestibulum non dolor accumsan, condimentum dui non, feugiat arcu. Vestibulum at ipsum nisi. Praesent orci ligula, viverra vel dui quis, rhoncus efficitur est. Nulla facilisi. Proin sollicitudin, sem ullamcorper rutrum sodales, tellus velit pharetra dui, at placerat tortor est sed urna. Ut sed nisl nec orci porttitor feugiat vitae eu tellus. In faucibus, lectus et dictum maximus, ante est euismod mauris, nec elementum metus justo ac metus. Fusce neque risus, placerat ac bibendum sed, egestas vitae arcu. Aenean non rhoncus quam. Maecenas mattis mi non neque fermentum, lobortis gravida justo tincidunt. Etiam pharetra varius est, ac eleifend massa posuere eu. Vivamus non nulla venenatis, cursus nulla nec, rutrum purus. Nunc augue nulla, lobortis ut malesuada vitae, porttitor ac arcu. Sed ornare nisi non ligula molestie bibendum.
+
+                Mauris ultricies at lectus non sodales. Ut bibendum orci quis lobortis accumsan. Suspendisse non eros purus. Donec vel elementum ante. Nullam blandit blandit ex, quis porta libero aliquam id. Cras elementum, justo eu ullamcorper bibendum, mauris libero rutrum lacus, rutrum bibendum nisi metus eget eros. Phasellus id mauris finibus, laoreet erat sed, tristique elit. Nam nec tortor sit amet arcu porta mattis. Vestibulum ullamcorper porttitor augue nec porta. Sed ante mauris, tristique a neque in, hendrerit commodo odio.
+            
+          .col-md-4
+             img(src="http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg")

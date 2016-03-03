@@ -11,23 +11,24 @@ html(lang='es')
     link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Raleway' )
-    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,latin-ext')
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Catamaran:400,900')
+   
     
     body       
        .mobilenav
             ul
               li
-                a(href='/actividad') Actividades     
+                a(href='/actividades') Actividades     
               li
                 a(href='#') Grupos 
               li
-                a(href='#') Mi perfil    
+                a(href='/perfil') Mi perfil    
               li
                 a(href='#') Mis mensajes  
               li
                 a(href='#') Mi cuenta
               li
-                a(href='#') Contacta con nosotros
+                a(href='/contact') Contacta con nosotros
               li
                 a(href='#') Sign out 
 
@@ -43,56 +44,25 @@ html(lang='es')
         #push
        
   
-  header.hero
-      h1
-      |  
-      h2.subheader 
     footer.footer
       .row
-        .col-md-4
-          p.logo
-            i.i.fa.fa-commenting 
+        .small-12.columns
+          p.logo 
+            i.i.fa.fa-commenting  
             |  AMIGUEA: 
-          |  
           |       
-          p.footer-links
-            a(href='#') Home
+          p.links
+            a(href='/home') Home
             |         
             a(href='/actividad') Actividades
             |         
             a(href='#') Grupos
             |         
-            a(href='#') About
+            a(href='/about') About
             |         
-            a(href='#') Faq
+            a(href='/faq') Faq
             |         
-            a(href='#') Contact
-          |       
-          p.copywrite Copywrite Amiguea: &copy; 2015-2016
-        |     
-        .col-md-4
-          ul.contact
-            p.titulos Who we are
-            li
-           
-              p
-                i.fa.fa-envelope-o
-                | Xavi Mora 
-            |         
-            li
-              p
-                i.i.fa.fa-envelope-o
-                | Daniel Florido
-            |         
-            li
-              p
-                i.i.fa.fa-envelope-o
-                | Mar Gordo
-        |     
-        .col-md-4
-          p.titulos We're social 
-          |       
-          p.about.subheader Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+            a(href='/contact') Contact
           |       
           ul.inline-list.social
             a(href='#')
@@ -106,6 +76,8 @@ html(lang='es')
             |         
             a(href='#')
               i.fa.fa-github
+          |             
+          p.copywrite Copywrite Amiguea: &copy; 2015-2016
 
         
         script(src="/javascripts/bootstrap.min.js")
